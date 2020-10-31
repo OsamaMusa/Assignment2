@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity2"
+    android:gravity="center"
+    android:background="@drawable/img">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/one">
+        <TableRow>
+            <TextView android:text="H :"/>
+            <TextView android:text="M :"/>
+            <TextView android:text="S"/>
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="@string/_00"
+                android:id="@+id/hours"
+                android:layout_margin="5dp"
+                />
+            <EditText
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_00"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="@string/_00"
+                android:id="@+id/sec"
+                android:layout_margin="5dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remining"
+                android:text="@string/_00"
+                />
+            <TextView/>
+
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one">
+
+
+        <TableRow>
+            <TextView/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:onClick="onClickStart"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stop"
+                android:onClick="onClickStop"
+
+                />
+        </TableRow>
+        <TableRow>
+            <TextView/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:onClick="onClickReset"
+
+                />
+        </TableRow>
+        <TableRow>
+            <TextView/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back_to_bmi"
+                android:onClick="btnGoToBMI"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+</RelativeLayout>

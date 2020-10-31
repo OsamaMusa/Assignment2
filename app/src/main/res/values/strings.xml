@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="go_to_timer">Go To Timer</string>
+    <string name="back_to_bmi">Back To BMI</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="_00">0</string>
+    <string name="start">Start</string>
+    <string name="enter_your_height">Height:</string>
+    <string name="enter_your_weight">Weight:</string>
+    <string name="enter_your_name">Name:</string>
+    <string name="get_bmi_scale">Get BMI scale</string>
+    <string name="save_data">Save Data</string>
+</resources>
